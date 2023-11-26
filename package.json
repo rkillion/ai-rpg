@@ -1,0 +1,29 @@
+{
+  "name": "ai-rpg",
+  "version": "1.0.0",
+  "description": "A world building game that uses your input and AI to create a world for role playing.",
+  "main": "index.js",
+  "scripts": {
+    "test": "test",
+    "start": "node ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rkillion/ai-rpg.git"
+  },
+  "keywords": [
+    "ai",
+    "rpg",
+    "game",
+    "fantasy"
+  ],
+  "author": "rkillion",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rkillion/ai-rpg/issues"
+  },
+  "homepage": "https://github.com/rkillion/ai-rpg#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
