@@ -15,3 +15,7 @@ To install and create the database:
 To run migrations and the server:
 
     npm start
+
+## Under Construction
+
+- Start a new game on the game page

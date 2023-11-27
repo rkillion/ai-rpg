@@ -1,3 +1,5 @@
+const { requiresAuth } = require("express-openid-connect");
+
 const router = require("express").Router();
 module.exports = router;
 
@@ -9,6 +11,8 @@ router.get('/me', (req, res) => {
         res.status(403).send()
     }
 });
+
+router.use('/worlds', requiresAuth(), require('./worlds'))
 
 router.use((req, res, next) => {
     const error = new Error("Not Found");
