@@ -14,20 +14,12 @@ const config = {
 
 // auth router attaches /login, /logout, and /callback routes to the baseURL
 app.use(auth(config));
+app.use('/api',require('./api'));
 
 // req.isAuthenticated is provided from the auth router
 app.get('/', (req, res) => {
     if (process.env.NODE_ENV==='development') {
         res.redirect('http://localhost:3000');
-    } else {
-        res.status(403).send()
-    }
-});
-
-// req.isAuthenticated is provided from the auth router
-app.get('/me', (req, res) => {
-    if (req.oidc.isAuthenticated()) {
-        res.send(JSON.stringify(req.oidc.user, null, 2));
     } else {
         res.status(403).send()
     }

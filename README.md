@@ -6,11 +6,12 @@ A world building game that uses your input and AI to create a world for role pla
 Requires
 - node v20.5.1
 - npm v9.8
+- postgres v14.1
 
-To install:
+To install and create the database:
 
-    npm install
+    npm run init
 
-To run:
+To run migrations and the server:
 
     npm start
